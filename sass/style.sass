@@ -1,0 +1,346 @@
+$main-color: #66C05D
+    
+*
+	font-family: 'Roboto', sans-serif
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+.container
+	max-width: 1110px
+	margin: 0 auto
+
+
+.btn
+    width: 170px
+    height: 40px
+    border-radius: 40px
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    border: none
+    display: block
+    transition: 0.5s all
+    cursor: pointer
+    &:hover
+        padding-left: 10px
+    &_white
+        color: #000000
+        background: #FFFFFF
+        border: 2px solid $main-color
+    &_green
+        background: $main-color
+        border: 2px solid #FFFFFF
+        color: #FFFFFF
+    &_green-full
+        background: $main-color
+        border-radius: 30px
+        width: 135px
+        height: 35px
+        letter-spacing: 0.05em
+        color: #FFFFFF
+        margin: 0px auto
+    &_block
+        height: 35px
+
+.header
+    min-height: 50px
+    background: #EFEFEF
+    display: flex
+    align-items: center
+    &_menu
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        width: 447px
+        list-style-type: none
+        li
+            width: fit-content
+            &::after
+                content: ''
+                display: block
+                height: 2px
+                width: 0%
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &::after
+                    width: 100%
+            a
+                font-weight: 400
+                font-size: 14px
+                line-height: 16px
+                color: #333333
+                text-decoration: none
+
+.promo
+    padding: 20px 0px 30px 0px
+    .container
+        display: flex
+        justify-content: space-between
+    &_logo
+        display: flex
+        align-items: center
+        img
+            display: block
+            margin-right: 20px
+    &_logo-text
+        font-weight: 700
+        font-size: 36px
+        line-height: 42px
+        letter-spacing: 0.1em
+        color: $main-color
+    &_contacts
+        display: flex
+        align-items: center
+    &_phone
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        text-decoration: none
+        margin-right: 40px
+    &_divider
+        width: 100%
+        height: 0px
+        border: 1px solid #EFEFEF
+        margin: 20px 0px 30px 0
+    &_menu
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        width: 675px
+        list-style-type: none
+        li
+            width: fit-content
+            &::after
+                content: ''
+                display: block
+                height: 2px
+                width: 0%
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &::after
+                    width: 100%
+            a
+                font-weight: 400
+                font-size: 16px
+                color: #000000
+                text-decoration: none
+    
+
+.sale
+    background: $main-color
+    height: 604px
+    overflow: hidden
+    .container
+        position: relative
+    &_wrapper
+        z-index: 2
+        width: 308px
+        height: 604px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &_title
+        z-index: 2
+        font-weight: 700
+        font-size: 48px
+        line-height: 56px
+        color: #FFFFFF
+    &_text
+        z-index: 2
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        margin: 50px 0px
+    &_wrapper-circle
+        z-index: 1
+        position: absolute
+        top: 0px
+        right: -70px
+        width: 859px
+        height: 604px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+    &_circle-big
+        width: 859px
+        height: 859px
+        background: rgba(255, 255, 255, 0.3)
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+    &_circle-mini
+        z-index: 1
+        width: 677px
+        height: 677px
+        background: rgba(255, 255, 255, 0.4)
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+        img
+            z-index: 1
+            display: block
+            width: 584px
+            height: 584px
+
+.goods
+    background: #EFEFEF
+    padding: 70px 0px 132px 0px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: fit-content
+        &:nth-child(1)
+            margin-bottom: 17px
+        &:nth-child(2)
+            margin-bottom: 100px
+    &_title
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+        color: #000000
+    &_img
+        width: 188px
+        height: 60px
+        margin-right: 46px
+        img
+            width: 100%
+            height: 100%
+        
+.card
+    width: 255px
+    background: #FFFFFF
+    padding: 25px 30px
+    transition: 0.5s all
+    &:hover
+        transform: scale(1.05)
+    &_img
+        width: 125px
+        height: 166px
+        margin: 0 auto
+        img
+            width: 100%
+    &_text
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+        color: #333333
+        margin-top: 20px
+    &_price
+        font-weight: 500
+        font-size: 21px
+        line-height: 25px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #000000
+        margin: 20px 0px
+
+.block
+    width: 540px
+    height: 212px
+    padding: 35px 40px
+    background: $main-color
+    display: flex
+    justify-content: space-between
+    align-items: center
+    transition: 0.5s all
+    &:hover
+        transform: scale(1.05)
+    &_title
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+        color: #FFFFFF
+    &_text
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        margin: 25px 0px
+    &_form
+        input
+            background: #FFFFFF
+            border-radius: 30px
+            width: 225px
+            height: 35px
+            border: none
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            padding: 0px 25px
+            &:focus
+                outline: none
+            &::placeholder
+                color: #C4C4C4
+    &_img
+        width: 140px
+        height: 106px
+        img
+            width: 100%
+
+.footer
+    &_contacts
+        height: fit-content
+        .container
+            display: flex
+            flex-wrap: wrap
+    &_wrapper
+        width: 33.33%
+        height: 120px
+        display: flex
+        align-items: center
+        &:nth-child(2)
+            justify-content: center
+        &:nth-child(3)
+            justify-content: flex-end
+    &_social
+        width: fit-content
+        display: flex
+        height: fit-content
+        a
+            display: block
+            width: 45px
+            height: 45px
+            border-radius: 100%
+            border: 2px solid #66C05D
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 20px
+            transition: 0.6s all
+            &:hover
+                background-color: $main-color
+                transition: 0.6s all
+                svg path
+                    transition: 0.6s all
+                    fill: #fff
+    &_phone
+        margin-right: 40px
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #000000
+        text-decoration: none
+    &_info
+        background: #EFEFEF
+        height: 64px
+        padding-top: 25px
+        .container
+            display: flex
+            justify-content: space-between
+            font-weight: 400
+            font-size: 12px
+            color: #828282
+
+
+@import 'media'
